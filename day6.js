@@ -114,4 +114,4 @@ arr12.forEach((a)=>{
 
  console.log("element in second row and third column in array",TwoD_arr,"is :",TwoD_arr[1][2]);
 
- //output : element in second row and second column in array [15,26,37],[49,58,67],[74,86,90]] is : 5
+ //output : element in second row and second column in array [15,26,37],[49,58,67],[74,86,90]] is : 67

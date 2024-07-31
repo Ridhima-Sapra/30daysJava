@@ -98,7 +98,9 @@ for(let p in book){
       console.log(p +" : " + book[p]);
 }
 /* output : 
-
+author : R.K. Narayan
+year : 2015
+title : Swami and his friends
 */
 
 //task 9 : use object.keys and object.values methods to log all properties and its values

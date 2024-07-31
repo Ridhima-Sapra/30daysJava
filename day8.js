@@ -113,3 +113,6 @@ obj={
 }
 console.log("Name is: ", obj.yourName)
 console.log("Age is: ", obj.yourAge)
+//output :
+// Name is:  Ridhima
+// Age is:  18
