@@ -51,7 +51,7 @@ fetching data 3
 data  3
 All data are consoled to log*/
 //ACTIVITY 3 : USING ASYNC AND AWAIT
-
+*/
 //task 4 : Write an async function that waits for a promise to resolve and then logs the resolved value
 function waitPromise(){
     return new Promise((resolve,reject)=>{
@@ -64,11 +64,11 @@ async function waitPromise(){
     console.log("function call 1");
     await waitPromise();
     console.log("function call 1");
-    await waitPromise();
+    await waitPromise2();
     console.log("function call 3");
 }
 //task 5 : Write an async function that handles a rejected promise using try-catch and logs the error message
-let func=()=>{
+/*let func=()=>{
     return new Promise((resolve,reject)=>{
             reject("some error occured");
     })
@@ -146,4 +146,4 @@ Promise.all([a,b]).then((values)=>{
 //Task 9 : Use Promise.race to log the value of the first promise that resolves among multiple promises
 Promise.race([a,b]).then((values)=>{
     console.log(values);
-});
+});*/
