@@ -1,0 +1,47 @@
+<!--SELECTING DIV ELEMENTS-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM LEARNING</title>
+        <style>
+            .bg_black{
+                background-color: black;
+                color:palevioletred;
+            }
+        </style>
+    </head>
+    <body style="background-color: aqua; color: black;">
+            <div class="parent">
+               <div class="child">Monday</div>
+               <div class="child">Tuesday</div>
+               <div class="child">Thursday</div>
+               <div class="child">Friday</div>
+            </div>
+    </body>
+    <script>
+        const parentdiv=document.querySelector('.parent');
+        // console.log(parentdiv);
+        // console.log(parentdiv.children[1].innerHTML);
+        for(let i=0;i<parentdiv.children.length;i++){
+            console.log(parentdiv.children[i].innerHTML);
+        }
+        const day=document.querySelector('.child');
+        console.log(day);
+        </script>
+</html>
+<!-- LEARNING
+ this dom model works on tree structure
+ Methods that we are using on selected div elements:
+ .children gives html vcollection
+ uspe loop lga skte hai
+ .firstElementChild gives proper div of first child
+ .lastElementChild gives proper div of last child
+ similar way from child we can reach parent also
+ .parentElement
+ .nextElementSibling
+ .parent.childNodes gives proper tree structure type node considereing each 
+ enter each comment each separate line a separate node
+  -->
+

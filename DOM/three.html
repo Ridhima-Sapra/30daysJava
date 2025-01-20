@@ -1,0 +1,35 @@
+<!-- creating div element -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM LEARNING</title>
+        <style>
+            .bg_black{
+                background-color: black;
+                color:palevioletred;
+            }
+        </style>
+    </head>
+    <body style="background-color: aqua; color: black;">
+    </body>
+    <script>
+        const div=document.createElement('div')
+        div.id=Math.round(Math.random()*10)
+        div.className="NewdivCreate"
+        div.style.backgroundColor="red"
+        div.style.padding="10px"
+        div.innerText="adding text through innerText"
+       const brLine= document.createElement('br')
+        div.appendChild(brLine)
+        const addtext=document.createTextNode("I am adding text to newly created div through function")
+        div.appendChild(addtext)
+        document.body.appendChild(div)
+        </script>
+</html>
+<!-- LEARNING
+ this dom model works on tree structure
+ 
+  -->
+

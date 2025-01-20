@@ -1,0 +1,50 @@
+<!-- editing removing functions element -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM LEARNING</title>
+        <style>
+            .bg_black{
+                background-color: black;
+                color:palevioletred;
+            }
+        </style>
+    </head>
+    <body style="background-color: aqua; color: black;">
+        <ul class="listclass">
+            <li class="language">Javascript</li>
+        </ul>
+    </body>
+    <script>
+        function addLang(lang){
+            const newlist=document.createElement('li')
+            const ul=document.querySelector('listclass')
+            newlist.appendChild(document.createTextNode(lang))
+            document.body.appendChild(newlist)
+        }
+        addLang('java')
+        addLang('python')
+        addLang('cpp')
+
+        //editing
+        // const firstlang=document.querySelector('li:nth-child(2)')
+        // firstlang.innerHTML="golang"
+
+
+        //remove
+        const lastLang=document.querySelector('li:last-child')
+        lastLang.remove()
+        </script>
+</html>
+<!-- LEARNING
+ this dom model works on tree structure
+ functions practiced in video
+ .innerHTML
+ .textContent after creating a newlist and then append
+.replaceWith(newli)
+.outerHTML=<'li>lang ka name</li>'
+ .remove()
+  -->
+
